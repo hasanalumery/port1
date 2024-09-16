@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan Alumery - Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="port.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hasan Alumery</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-section="about">About</a></li>
+                <li><a href="#" data-section="portfolio">Portfolio</a></li>
+                <li><a href="#" data-section="skills">Skills</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+                <li><a href="https://github.com/34905" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section active">
+        <h2>About</h2>
+        <p>This is the About section. Add some info about yourself here.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section">
+        <h2>Portfolio</h2>
+        <div class="projects-container">
+            <div class="tile" data-info="Project 1: A detailed description of the first project.">
+                <h3>Project Title 1</h3>
+            </div>
+            <div class="tile" data-info="Project 2: A detailed description of the second project.">
+                <h3>Project Title 2</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="tile" data-info="JavaScript: Description of proficiency and experience with JavaScript.">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="tile" data-info="CSS: Description of proficiency and experience with CSS.">
+                <h3>CSS</h3>
+            </div>
+            <div class="tile" data-info="React: Description of proficiency and experience with React.">
+                <h3>React</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <p>Feel free to get in touch!</p>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div id="project-details" class="hidden">
+        <div id="project-info"></div>
+        <button id="close-btn">Close</button>
+    </div>
+</body>
+</html>
