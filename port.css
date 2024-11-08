@@ -487,3 +487,60 @@ main{
         font-size: 0.875rem; /* 14px */
     }
 }
+
+/* Media Query for Mobile */
+@media (max-width: 48rem) { /* 768px */
+    /* Header Responsiveness */
+    header {
+        padding: 0.5rem 0; /* Reduced padding for smaller screens */
+        background-color: rgba(31, 31, 31, 0.95); /* Darker for better visibility */
+    }
+
+    header h1 {
+        font-size: 1.25rem; /* Smaller font size for header title */
+    }
+
+    nav ul {
+        flex-direction:row; /* Stack the menu items vertically */
+        gap: 0.500rem; /* Smaller gap between menu items */
+    }
+
+    nav ul li a {
+        font-size: 0.475rem; /* Slightly smaller font size for menu links */
+        padding: 0.5rem 1rem; /* Adjust padding for mobile */
+    }
+
+    /* Media Query for Mobile */
+@media (max-width: 48rem) { /* 768px */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%; /* Set to full width of the container */
+        max-width: 10rem; /* Restrict the width for smaller images */
+        margin: 0 auto 1rem; /* Center the image and add space below */
+        overflow: hidden; /* Hide any overflow */
+        border-radius: 1rem; /* Maintain rounded corners */
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Shadow for depth */
+    }
+
+    .about-image img {
+        width: 100%; /* Ensure the image fits its container */
+        height: auto; /* Maintain aspect ratio */
+        padding-top: 18.7rem;
+        object-fit: cover; /* Crop image to fill container without distortion */
+        background-color: #f4f4f9;
+    }
+
+    pre, code {
+        padding: 1rem; /* Reduce padding on mobile */
+        font-size: 0.875rem; /* 14px */
+    }
+}
+
+
+   
+}

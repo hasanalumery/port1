@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan Alumery - Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="port.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hasan Alumery</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-section="about">About</a></li>
+                <li><a href="#" data-section="portfolio">Portfolio</a></li>
+                <li><a href="#" data-section="skills">Skills</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+                <li><a href="https://github.com/hasanalumery" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/hasan-alumery-241b52277/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section active">
+        <h2>Over Mij</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="/img/IMG-20241029-WA0002.jpg" alt="Jouw Foto">
+            </div>
+            <div class="about-text">
+                <p style="color: #d6336c;">Hallo, ik ben Hasan</p>
+                <p>een gepassioneerde </p>
+                <p style="color: #009688;">software developer</p> 
+                <p> met een liefde voor</p>
+                <p style="color: #ff9800;">front-end</p>
+                <p> ik specialiseer in </p>
+                <p style="color: #3f51b5;">JavaScript</p> 
+                <p> en heb ervaring met </p>
+                <p style="color: #f44336;">HTML, CSS, PHP, React en Scrum</p>
+                <p> Wanneer ik niet werk ben ik te vinden</p>
+                <p style="color: #673ab7;">met vrienden aan het genieten</p>
+                <p> en met een toewijding aan </p>
+                <p style="color: #4caf50;">leergierigheid</p>
+                <p>wil ik mezelf continu verbeteren in wat ik doe en leer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section">
+        <h2>Portfolio</h2>
+        <div class="projects-container">
+            <div class="tile" data-info="Project 1: API Collage is een project waarin meerdere API's worden geïntegreerd om dynamische inhoud weer te geven. Het toont vaardigheid in het omgaan met RESTful API's en dynamisch webontwerp." data-image="/img/apicollage.png" data-link="https://github.com/hasanalumery/periode3skill/tree/main/pokemon">
+                <h3>API Collage</h3>
+            </div>
+            <div class="tile" data-info="Project 2: BEM (Block Element Modifier) richt zich op het organiseren van CSS voor schaalbaarheid en herbruikbaarheid. Dit project demonstreert een gestructureerde benadering van styling en componentgebaseerd ontwerp." data-image="/img/bemm.png" data-link="https://github.com/hasanalumery/bem">
+                <h3>BEM</h3>
+            </div>
+            <div class="tile" data-info="Project 3: Neonheader is een ontwerpgericht project met neon-stijl headers voor websites. Het laat vaardigheden zien in CSS-animaties, gradaties en aangepaste typografie." data-image="/img/neonheader.png" data-link="https://github.com/hasanalumery/neonheader">
+                <h3>Neonheader</h3>
+            </div>
+            <div class="tile" data-info="Project 4: Game Trailer omvat het maken van een trailer voor een spel met HTML, CSS en JavaScript. Het integreert video-elementen en zorgt voor een meeslepende gebruikerservaring." data-image="/img/pikpikmin.png" data-link="https://github.com/hasanalumery/pikpikpik">
+                <h3>Game Trailer</h3>
+            </div>
+            <div class="tile" data-info="Project 5: Webshop is een e-commerce site met moderne webtechnologieën. Het biedt functies zoals productvermelding, winkelwagenfunctionaliteit en veilige betalingen." data-image="/img/xzykhoops.png" data-link="https://github.com/hasanalumery/pd4bo">
+                <h3>Webshop</h3>
+            </div>
+        </div>
+        
+        <!-- Project Details Modal -->
+        <div id="dynamic-project-details" class="hidden dynamic-project-details">
+            <img id="project-image" class="project-image" alt="Projectafbeelding" style="width:200px;">
+            <p id="project-description" class="project-description"></p>
+            <a id="project-link" class="project-link" href="#" target="_blank">Bekijk Project</a>
+            <button class="close-btn">Sluiten</button>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="tile" data-info="JavaScript: Vaardigheid in JavaScript, inclusief DOM-manipulatie, event handling en asynchrone programmering." data-image="/img/jscodepic.png" data-link="https://github.com/hasanalumery">
+                <h3>JavaScript</h3> <img src="img/jslogo.svg" />
+            </div>
+            <div class="tile" data-info="CSS: Geavanceerde vaardigheden in CSS, waaronder Flexbox, Grid en het maken van responsieve ontwerpen." data-image="/img/csscodepic.png" data-link="https://github.com/hasanalumery">
+                <h3>CSS</h3> <img src="img/css-3.svg" /> 
+            </div>
+            <div class="tile" data-info="React: Vaardigheid in React.js voor dynamische, componentgebaseerde webapplicaties." data-image="/img/jsxcodepic.png" data-link="https://github.com/hasanalumery">
+                <h3>React</h3> <img src="img/react-native-firebase-1.svg" />
+            </div>
+            <div class="tile" data-info="Docker: Ervaring met Docker voor containerisatie, inclusief het maken van Dockerfiles en het beheren van containers." data-image="/img/dockerimg.png" data-link="https://github.com/hasanalumery">
+                <h3>Docker</h3> <img src="img/docker-4.svg" />
+            </div>
+            <div class="tile" data-info="Scrum: Vaardigheid in agile methodologieën, vooral Scrum. Ervaring met projectmanagementtools zoals Trello of Jira." data-image="/img/vuiltrello.png" data-link="https://github.com/hasanalumery">
+                <h3>Scrum</h3> <img src="img/scrum-1.svg" />
+            </div>
+        </div>
+
+        <!-- Project Details Modal -->
+        <div id="dynamic-project-details" class="hidden dynamic-project-details">
+            <img id="project-image" class="project-image" alt="Projectafbeelding" style="width:200px;">
+            <p id="project-description" class="project-description"></p>
+            <a id="project-link" class="project-link" href="#" target="_blank">Bekijk Project</a>
+            <button class="close-btn">Sluiten</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>Neem gerust contact op!</p>
+                <p>Als je vragen hebt,</p>
+                <p>aarzel dan niet om contact met mij op te nemen:</p>
+                <ul>
+                    <li><strong>Telefoon:</strong> <a href="tel:+31651366273">0651366273</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:hasanalumery@gmail.com">hasanalumery@gmail.com</a></li>
+                    <li><strong>Locatie:</strong> Ilpendam, Noord-Holland</li>
+                </ul>
+            </div>
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.210817695036!2d4.946497016074345!3d52.44963687979725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6084348a7e63d%3A0x99329d9d98270b97!2sIlpendam%2C%20Netherlands!5e0!3m2!1sen!2s!4v1696672977051!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
