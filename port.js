@@ -1,4 +1,4 @@
-// port.js
+// port.js - Fixed version
 
 document.addEventListener('DOMContentLoaded', () => {
   // Color palette for cards
@@ -7,163 +7,173 @@ document.addEventListener('DOMContentLoaded', () => {
     '#4db6ac', '#f06292', '#9575cd', '#7986cb', '#a1887f'
   ];
 
-  // Project data (expanded info)
+  // Project data (fixed URLs with proper protocols)
   const projects = [
-    {
-      title: 'API Collage',
-      info: `Een dynamisch dashboard dat data van de PokéAPI, REST Countries en OpenWeather combineert. 
-             Gebruikers kunnen landen vergelijken, Pokémon-gegevens bekijken en het huidige weer zien. 
-             Volledig asynchroon opgezet met fetch-requests en error-handling voor robuuste UX.`,
-      image: '/img/apicollage.png',
-      link: 'https://github.com/hasanalumery/periode3skill/tree/main/pokemon'
-    },
-    {
-      title: 'BEM',
-      info: `Een schaalbare CSS-architectuur opgezet volgens de Block-Element-Modifier­methodologie. 
-             Bevat herbruikbare componenten voor buttons, kaarten en lay-out. 
-             Alle styling is modulair en future-proof gemaakt met duidelijke naamconventies.`,
-      image: '/img/bemm.png',
-      link: 'https://github.com/hasanalumery/bem'
-    },
-    {
-      title: 'Neonheader',
-      info: `Een levendige set headers met neon­kleuren, opgebouwd met CSS keyframes en gradients. 
-             Inclusief hover­-effects en responsive typografie voor zowel desktop als mobiel. 
-             Perfect voor creatieve landingpages en entertainment­sites.`,
-      image: '/img/neonheader.png',
-      link: 'https://github.com/hasanalumery/neonheader'
-    },
-    {
-      title: 'Game Trailer',
-      info: `Interactieve trailerpagina voor een gameconcept, met custom HTML5‐video‐controls. 
-             Speelt animaties af bij scroll­events en heeft subtiele fade-in effecten. 
-             Gebouwd met puur JavaScript zonder externe bibliotheken.`,
-      image: '/img/pikpikmin.png',
-      link: 'https://github.com/hasanalumery/pikpikpik'
-    },
-    {
-      title: 'Webshop',
-      info: `Volledig functionele e-commerce prototype met productlijsten, winkelwagen en checkout. 
-             Checkout‐flow valideert gebruikersinput en slaat sessie­data op in LocalStorage. 
-             Inclusief mock-betaling en orderoverzicht.`,
-      image: '/img/xzykhoops.png',
-      link: 'https://github.com/hasanalumery/pd4bo'
-    },
-    {
-      title: 'MovieDB Explorer',
-      info: `React-app die de TMDB API benut om filmzoekopdrachten en details te tonen. 
-             Gebruikers kunnen favorieten toevoegen, sorteren en filteren. 
-             State­management via hooks en context API.`,
-      image: '/img/project6.png',
-      link: 'https://github.com/hasanalumery/project6'
-    },
-    {
-      title: 'Weather App',
-      info: `Realtime weersvoorspelling met de OpenWeatherMap API. 
-             Toont huidige condities, icoontjes en een 7-daagse forecast. 
-             Inclusief automatische geolocatie en error­meldingen.`,
-      image: '/img/project7.png',
-      link: 'https://github.com/hasanalumery/project7'
-    },
-    {
-      title: 'Management App',
-      info: `Eenvoudige CRUD­applicatie in vanilla JS en PHP met MySQL. 
-             Gebruikers kunnen taken toevoegen, bewerken, verwijderen en markeren als voltooid. 
-             Beveiliging met prepared statements.`,
-      image: '/img/project8.png',
-      link: 'https://github.com/hasanalumery/project8'
-    },
-    {
-      title: 'Task Manager',
-      info: `To-do lijst met drag-and-drop functionaliteit en LocalStorage­-sync. 
-             Gebouwd met de HTML5 Drag & Drop API en minimalistische UI. 
-             Focus op toegankelijkheid en keyboard­navigatie.`,
-      image: '/img/project9.png',
-      link: 'https://github.com/hasanalumery/project9'
-    },
-    {
-      title: 'Dashboard',
-      info: `Admin dashboard met CSS Grid & Chart.js voor data­visualisaties. 
-             Laat realtime grafieken zien, tabel filters en responsive cards. 
-             Gebouwd vanuit een componentgedreven aanpak.`,
-      image: '/img/project10.png',
-      link: 'https://github.com/hasanalumery/project10'
-    }
-  ];
+  {
+    title: 'API Collage',
+    info: `Een collage van verschillende APIs die samen één interface vormen. PokéAPI, Anime API en Sport API 
+           data wordt gecombineerd in visuele blokken die je kunt vergelijken en sorteren. 
+           Elke API heeft zijn eigen sectie maar ze werken samen als één geheel.`,
+    image: '/img/apicollage.png',
+    link: 'http://api-collage.hasanalumery.nl' // Using HTTP for now
+  },
+  {
+    title: 'Music Site',
+    info: `Website voor een muziekproject met clean CSS architectuur. Clean layout voor albums, 
+           tracks en artiest info. Modulaire components maken het makkelijk om nieuwe secties 
+           toe te voegen zonder de bestaande styling te breken.`,
+    image: '/img/musicappsite.png',
+    link: 'http://music-site.hasanalumery.nl' // Using HTTP for now
+  },
+  {
+    title: 'Tomodatchi',
+    info: `Virtual pet game geïnspireerd op Tamagotchi. Je zorgt voor je digitale vriend door 
+           te voeden, spelen en verzorgen. Neon styling en retro animaties geven het een 
+           nostalgische maar moderne uitstraling.`,
+    image: '/img/tomo2.png',
+    link: 'http://tomodatchi.hasanalumery.nl' // Using HTTP for now
+  },
+  {
+    title: 'Game Trailer',
+    info: `Trailer website voor een indie game project. Custom video player met game-themed controls 
+           en scroll-triggered animaties die de verhaal elementen onthullen. Vanilla JS zorgt 
+           voor snelle loading en smooth gameplay preview.`,
+    image: '/img/gametrailer.png',
+    link: 'http://game-trailer.hasanalumery.nl' // Using HTTP for now
+  },
+  {
+    title: 'Webshop',
+    info: `E-commerce platform met volledige shopping ervaring. Product catalogus, winkelwagen, 
+           checkout proces en order bevestiging. LocalStorage houdt je winkelwagen bij en 
+           mock payments testen de hele flow zonder echte transacties.`,
+    image: '/img/webshop2.png',
+    link: 'http://webshop.hasanalumery.nl' // Using HTTP for now
+  },
+  {
+    title: 'MovieDB Explorer',
+    info: `Film database explorer die TMDB API gebruikt om movies te ontdekken. Zoek op titel, 
+           genre of jaar, bekijk trailers en details, en hou favorieten bij. React hooks 
+           en context maken de app responsive en gebruiksvriendelijk.`,
+    image: '/img/moviedb.png',
+    link: 'http://moviedb.hasanalumery.nl' // Using HTTP for now
+  },
+  {
+    title: 'Weather App',
+    info: `Simpele weer applicatie met real-time voorspellingen. Huidige temperatuur, wind, 
+           luchtvochtigheid en 7-daagse forecast. Automatische locatie detectie of handmatig 
+           stad invoeren - alles wat je nodig hebt voor het weer.`,
+    image: '/img/wezz.png',
+    link: 'http://weather.hasanalumery.nl' // Using HTTP for now
+  },
+  {
+    title: 'Recipe Finder',
+    info: `Recepten zoeker waar je gerechten kunt vinden op basis van ingrediënten die je hebt. 
+           Zoek, filter en bewaar je favoriete recepten. PHP backend met MySQL database 
+           voor veilige opslag van alle recepten data.`,
+    image: '/img/cookbook.png',
+    link: 'http://recipe-finder.hasanalumery.nl' // Using HTTP for now
+  },
+  {
+    title: 'Task Manager',
+    info: `Taken beheer systeem voor persoonlijke productiviteit. Maak taken aan, organiseer 
+           met drag & drop, stel deadlines in en houd voortgang bij. LocalStorage sync 
+           zorgt dat je taken bewaard blijven tussen sessies.`,
+    image: '/img/listsite.png',
+    link: 'http://tasklist.hasanalumery.nl' // Using HTTP for now
+  },
+  {
+    title: 'Dashboard',
+    info: `Admin dashboard voor data overzicht en beheer. Grafieken, statistieken en KPI widgets 
+           geven inzicht in belangrijke metrics. Chart.js visualisaties en CSS Grid layout 
+           maken complexe data makkelijk te begrijpen.`,
+    image: '/img/dashbeard.png',
+    link: 'http://dash.hasanalumery.nl' // Using HTTP for now
+  }
+];
 
-  // Skill data (expanded info)
-  const skills = [
-    {
-      title: 'JavaScript',
-      info: `Diepgaande kennis van ES6+ features: let/const, arrow functions, spread/rest. 
-             Ervaring met DOM­manipulatie, event handling en het schrijven van asynchrone code met async/await.`,
-      icon: '/img/jslogo.svg',
-      link: 'https://github.com/hasanalumery'
-    },
-    {
-      title: 'CSS',
-      info: `Expertise in Flexbox en CSS Grid voor responsive layouts. 
-             Styling van animaties, transitions en custom media queries voor alle schermgroottes.`,
-      icon: '/img/css-3.svg',
-      link: 'https://github.com/hasanalumery'
-    },
-    {
-      title: 'React',
-      info: `Component­-gebaseerde architectuur met function components en hooks. 
-             State en context API voor globale data, prop drill minimaliseren en performance optimalisatie.`,
-      icon: '/img/react-native-firebase-1.svg',
-      link: 'https://github.com/hasanalumery'
-    },
-    {
-      title: 'Docker',
-      info: `Containerisatie van apps met Dockerfiles, multi­stage builds en Docker Compose. 
-             Ontwikkel- en productieworkflows gestroomlijnd met geïsoleerde omgevingen.`,
-      icon: '/img/docker-4.svg',
-      link: 'https://github.com/hasanalumery'
-    },
-    {
-      title: 'Scrum',
-      info: `Agile sprints plannen en uitvoeren, daily stand­ups, backlog grooming en sprint retrospectives. 
-             Gebruik van Jira en Trello voor visueel projectmanagement.`,
-      icon: '/img/scrum-1.svg',
-      link: 'https://github.com/hasanalumery'
-    },
-    {
-      title: 'Laravel',
-      info: `Basis Laravel MVC: routing, controllers, Eloquent ORM en Blade templating. 
-             Rapid prototyping van REST API endpoints met middleware en resource controllers.`,
-      icon: '/img/php.svg',
-      link: 'https://github.com/hasanalumery'
-    },
-    {
-      title: 'Tailwind CSS',
-      info: `Utility-first styling met Tailwind, custom thema’s via config. 
-             Snelle prototyping en minimalistische CSS builds met PurgeCSS integratie.`,
-      icon: '/img/tailwindcss.svg',
-      link: 'https://github.com/hasanalumery'
-    },
-    {
-      title: 'PHP',
-      info: `Backend scripting met pure PHP: form handling, sessions en eenvoudige REST API’s. 
-             Ervaring met best practices en beveiligingsmaatregelen zoals input sanitization.`,
-      icon: '/img/php.svg',
-      link: 'https://github.com/hasanalumery'
-    },
-    {
-      title: 'MySQL',
-      info: `Database­ontwerp en query­optimalisatie: joins, indexing en normalisatie. 
-             Samenwerking tussen PHP en MySQL voor dynamische webapplicaties.`,
-      icon: '/img/mysql.svg',
-      link: 'https://github.com/hasanalumery'
-    },
-    {
-      title: 'Git',
-      info: `Versiebeheer met Git: branching, merging, pull requests en conflict resolution. 
-             Samenwerking via GitHub workflows, CI/CD pipelines en code reviews.`,
-      icon: '/img/git.svg',
-      link: 'https://github.com/hasanalumery'
-    }
-  ];
+  // Skill data (unchanged)
+ const skills = [
+  {
+    title: 'JavaScript',
+    info: `Van DOM manipulatie tot moderne ES6+ features. Werk veel met async/await voor API calls 
+           en arrow functions voor cleaner code. Event handling en interactive features zijn 
+           dagelijkse kost geworden.`,
+    icon: 'Code2',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  },
+  {
+    title: 'CSS',
+    info: `Flexbox en Grid zijn mijn go-to voor layouts. Hou van experimenteren met animaties 
+           en transitions. Responsive design vanaf mobile-first - elk project moet er goed 
+           uitzien op alle schermen.`,
+    icon: 'Palette',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  },
+  {
+    title: 'React',
+    info: `Hooks hebben mijn manier van React schrijven veranderd. Context API gebruik ik voor 
+           shared state en function components houden alles clean. Performance optimalisatie 
+           is belangrijk, vooral bij grotere apps.`,
+    icon: 'Component',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  },
+  {
+    title: 'Docker',
+    info: `Containers maken development zoveel makkelijker. Multi-stage builds houden images 
+           klein en Docker Compose helpt bij complexere setups. Vooral handig voor consistent 
+           werken tussen verschillende machines.`,
+    icon: 'Container',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  },
+  {
+    title: 'Scrum',
+    info: `Sprint planning en daily standups zijn routine geworden. Retrospectives geven goede 
+           insights over wat beter kan. Jira is handig voor tracking, maar soms is een simpel 
+           Trello board net zo effectief.`,
+    icon: 'Users',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  },
+  {
+    title: 'Laravel',
+    info: `MVC structuur maakt backend development overzichtelijk. Eloquent ORM is krachtig voor 
+           database queries en Blade templating werkt prettig. Vooral goed voor snel prototypes 
+           bouwen met ingebouwde authenticatie.`,
+    icon: 'Server',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  },
+  {
+    title: 'Tailwind CSS',
+    info: `Utility classes maken styling veel sneller. Custom config voor consistent design systems 
+           en PurgeCSS houdt builds klein. Soms mis je custom CSS, maar voor prototyping is het 
+           perfect.`,
+    icon: 'Paintbrush2',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  },
+  {
+    title: 'PHP',
+    info: `Begonnen met pure PHP voor form handling en sessions. Input sanitization en prepared 
+           statements zijn essentieel voor veiligheid. Nog steeds handig voor snelle scripts 
+           en simpele backend logica.`,
+    icon: 'Terminal',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  },
+  {
+    title: 'MySQL',
+    info: `Database design en query optimalisatie zijn puzzels die ik graag oplos. Joins kunnen 
+           complex worden maar indexing helpt veel. De combinatie met PHP werkt goed voor 
+           dynamische content.`,
+    icon: 'Database',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  },
+  {
+    title: 'Git',
+    info: `Feature branches en pull requests houden code georganiseerd. Merge conflicts gebeuren, 
+           maar zijn meestal makkelijk op te lossen. GitHub workflows en code reviews maken 
+           samenwerken veel beter.`,
+    icon: 'GitBranch',
+    link: 'https://github.com/hasanalumery/hasanalumery'
+  }
+];
 
   // Create card: colored background + title span
   function createCard(item, isSkill = false, index = 0) {
@@ -210,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(s => s.hidden = true);
   document.getElementById('about').hidden = false;
 
-  // Modal logic
+  // Modal logic with better link handling
   const modal    = document.querySelector('.dynamic-project-details');
   const titleEl  = modal.querySelector('.project-title');
   const imgEl    = modal.querySelector('.project-image');
@@ -220,15 +230,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openModal(item, isSkill) {
     titleEl.textContent = item.title;
-    imgEl.src           = isSkill ? item.icon : item.image;
+    
+    // Handle skills differently - they use icon names, not image URLs
+    if (isSkill) {
+      // Hide or replace image for skills, or use a placeholder
+      imgEl.style.display = 'none'; // Hide image for skills
+      // Alternative: imgEl.src = '/img/skill-placeholder.png'; // Use a placeholder
+    } else {
+      imgEl.style.display = 'block'; // Show image for projects
+      imgEl.src = item.image;
+    }
+    
     descEl.textContent  = item.info;
     linkEl.href         = item.link;
+    
+    // Make sure the link opens in a new tab and has proper attributes
+    linkEl.target = '_blank';
+    linkEl.rel = 'noopener noreferrer';
+    
+    // Debug: log the link to console
+    console.log('Modal opened for:', item.title, 'Link:', item.link);
+    
     modal.classList.remove('hidden');
   }
+  
   function closeModal() {
     modal.classList.add('hidden');
   }
+  
   closeBtn.addEventListener('click', closeModal);
+
+  // Close modal when clicking outside of it
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
 
   // Header shrink on scroll
   window.addEventListener('scroll', () => {
