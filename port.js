@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Project data (fixed URLs with proper protocols)
   const projects = [
   {
-    title: 'API Collage',
-    info: `Een collage van verschillende APIs die samen één interface vormen. PokéAPI, Anime API en Sport API 
-           data wordt gecombineerd in visuele blokken die je kunt vergelijken en sorteren. 
-           Elke API heeft zijn eigen sectie maar ze werken samen als één geheel.`,
-    image: '/img/apicollage.png',
-    link: 'http://api-collage.hasanalumery.nl' // Using HTTP for now
+    title: 'SocialMedia Clone',
+    info: `Een modulair social-platform waarin de feed, gebruikersinteracties en messaging ieder hun eigen rol vervullen, maar geïntegreerd worden tot één consistente, high-performance gebruikerservaring.
+           Data uit de verschillende modules wordt samengebracht in overzichtelijke contentblokken die je kunt filteren, rangschikken en vergelijken.
+           Elke module opereert autonoom, maar gezamenlijk leveren ze een schaalbare, toekomstbestendige en professioneel gestroomlijnde social-media omgeving.`,
+    image: '/img/mediaclone.png',
+    link: 'http://socialmedia.hasanalumery.nl/' // Using HTTP for now
   },
   {
     title: 'Music Site',
